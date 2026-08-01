@@ -1,8 +1,30 @@
 aid: salus
 name: Salus
-description: Salus is a company surfaced as a portfolio company of y-combinator and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Salus provides runtime validation and governance for AI agents. It sits between an
+  agent and its tools as a policy-aware proxy that intercepts each action before it
+  executes, then clarifies, rewrites, escalates for human review, or blocks it against
+  organizational policies — managing commit-time risk on financial transfers, appointment
+  changes, and data modifications before they alter customer data, finances, or records.
+  Integration requires only an endpoint URL change (no agent rewrite), and Salus works
+  across OpenAI, Anthropic, Gemini, LangChain, LangGraph, CrewAI, Retell, Vapi, and custom
+  tools. Capabilities include evidence-based validation, PII detection, budget and loop
+  protection, idempotency checks, human-in-the-loop escalation, self-repair of blocked
+  actions, and integrated evals and observability. Salus is a Y Combinator (Winter 2026)
+  company based in San Francisco.
 url: https://raw.githubusercontent.com/api-evangelist/salus/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.usesalus.ai/og.svg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,12 +33,33 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- AI Agents
+- Runtime Validation
+- Agent Governance
+- AI Safety
+- Guardrails
+- Developer Tools
+- Infrastructure
 apis: []
+common:
+- type: DomainSecurity
+  url: security/salus-domain-security.yml
+- type: Website
+  url: https://www.usesalus.ai/
+- type: Pricing
+  url: https://www.usesalus.ai/pricing
+- type: TrustCenter
+  url: https://www.usesalus.ai/trust
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
